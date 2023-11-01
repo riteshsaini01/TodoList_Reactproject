@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+form{
+    height: 300px;
+    width: 400px;
+    margin: 0px;
+    padding: 0;
+}
+.dark {
+    --bg-color: #1f1f1f;
+    --text-color: #ffffff;
+  }
+  
+  .light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
