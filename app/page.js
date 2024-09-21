@@ -23,8 +23,7 @@ const Page = () => {
           className="w-2/3 text-xl border-zinc-800 border-2 m-2 p-2"
           placeholder="Search"
           value={searchQuery}
-          onChange={handleSearchInputChange}
-        />
+          onChange={handleSearchInputChange}/>
         <button className="bg-slate-500 rounded p-2 m-2">🔍</button>
         <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggleTheme} className="bg-slate-500 text-3xl rounded p-2 m-2" />
       </div>
@@ -85,23 +84,20 @@ const Page = () => {
             onClick={() => { statusHandler(i) }}
             className={`bg-blue-400 m-2 text-white px-4 py-2 rounded font-bold ${
               t.completed ? 'hidden' : ''
-            }`}
-          >
+            }`}>
             Complete
           </button>
           <span
             className={`text-green-500 font-bold ${
               t.completed ? '' : 'hidden'
-            }`}
-          >
+            }`}>
             Completed
           </span>
           <button
             onClick={() => {
               deleteHandler(i)
             }}
-            className="bg-blue-400 text-white px-4 py-2 rounded font-bold"
-          >
+            className="bg-blue-400 text-white px-4 py-2 rounded font-bold">
             Delete
           </button>
         </li>
